@@ -1,4 +1,4 @@
-import { Github, Mail, MapPin } from 'lucide-react';
+import { ArrowRight, Github, Mail, MapPin } from 'lucide-react';
 import { contact } from '@/data/portfolio';
 
 const Footer = () => {
@@ -34,6 +34,16 @@ const Footer = () => {
               <MapPin size={20} />
               <span className="hidden sm:inline">{contact.location}</span>
             </div>
+
+            {/* Phone link */}
+            <a
+              href={`tel:${contact.phone}`}
+              className="flex items-center space-x-2 text-gray-300 hover:text-blue-400 transition-colors"
+              aria-label="Phone"
+            >
+              <span className="hidden sm:inline">{contact.phone}</span>
+              <ArrowRight size={20} />
+            </a>
           </div>
 
           {/* Copyright */}

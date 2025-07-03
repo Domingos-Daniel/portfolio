@@ -16,4 +16,5 @@ export interface Contact {
   email: string;
   github: string;
   location: string;
+  phone: string;
 }
