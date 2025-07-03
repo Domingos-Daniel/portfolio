@@ -2,7 +2,7 @@ import { Project, Skill, Contact } from '@/types';
 
 export const personalInfo = {
     name: 'Domingos Manuel Daniel',
-    title: 'Frontend Developer',
+    title: 'Web Developer',
     location: 'Luanda, Angola',
     bio: 'Frontend Developer with a passion for building clean, responsive, and user-friendly interfaces using React and TypeScript. Focused on scalable and maintainable solutions.',
     profileImage: '/me.jpg'

@@ -15,8 +15,8 @@ const resources = {
       
       // Home Page
       home: {
-        title: 'Frontend Developer',
-        bio: 'Frontend Developer with a passion for building clean, responsive, and user-friendly interfaces using React and TypeScript. Focused on scalable and maintainable solutions.',
+        title: 'Web Developer',
+        bio: 'Web Developer with a passion for building clean, responsive, and user-friendly interfaces using React and TypeScript. Focused on scalable and maintainable solutions.',
         getInTouch: 'Get in touch',
         viewGithub: 'View GitHub',
         viewProjects: 'View My Projects',
@@ -115,8 +115,8 @@ const resources = {
       
       // Home Page
       home: {
-        title: 'Desenvolvedor Frontend',
-        bio: 'Desenvolvedor Frontend com paixão por construir interfaces limpas, responsivas e amigáveis ao usuário usando React e TypeScript. Focado em soluções escaláveis e de fácil manutenção.',
+        title: 'Desenvolvedor Web',
+        bio: 'Desenvolvedor Web com paixão por construir interfaces limpas, responsivas e amigáveis ao usuário usando React e TypeScript. Focado em soluções escaláveis e de fácil manutenção.',
         getInTouch: 'Entre em contato',
         viewGithub: 'Ver GitHub',
         viewProjects: 'Ver Meus Projetos',
@@ -192,7 +192,7 @@ const resources = {
         location: 'Localização',
         getInTouch: 'Entre em Contato',
         quickLinks: 'Links Rápidos',
-        followMe: 'Me Siga',
+        followMe: 'Siga-me',
         madeWith: 'Feito com',
         using: 'usando'
       },
