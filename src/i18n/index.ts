@@ -89,7 +89,12 @@ const resources = {
         copyright: 'All rights reserved.',
         email: 'Email',
         github: 'GitHub',
-        location: 'Location'
+        location: 'Location',
+        getInTouch: 'Get in Touch',
+        quickLinks: 'Quick Links',
+        followMe: 'Follow Me',
+        madeWith: 'Made with',
+        using: 'using'
       },
       
       // Language
@@ -184,7 +189,12 @@ const resources = {
         copyright: 'Todos os direitos reservados.',
         email: 'Email',
         github: 'GitHub',
-        location: 'Localização'
+        location: 'Localização',
+        getInTouch: 'Entre em Contato',
+        quickLinks: 'Links Rápidos',
+        followMe: 'Me Siga',
+        madeWith: 'Feito com',
+        using: 'usando'
       },
       
       // Language
