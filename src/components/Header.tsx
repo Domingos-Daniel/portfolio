@@ -4,15 +4,17 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 const Header = () => {
   const pathname = usePathname();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { t } = useTranslation();
 
   const navItems = [
-    { href: '/', label: 'Home' },
-    { href: '/projects', label: 'Projects' },
-    { href: '/skills', label: 'Skills' }
+    { href: '/', label: t('nav.home') },
+    { href: '/projects', label: t('nav.projects') },
+    { href: '/skills', label: t('nav.skills') }
   ];
 
   const isActive = (href: string) => pathname === href;

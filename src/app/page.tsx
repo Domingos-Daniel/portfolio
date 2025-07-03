@@ -4,8 +4,10 @@ import Image from "next/image";
 import Link from "next/link";
 import { Github, Mail, MapPin, ArrowRight } from 'lucide-react';
 import { personalInfo, contact } from '@/data/portfolio';
+import { useTranslation } from 'react-i18next';
 
 export default function Home() {
+  const { t } = useTranslation();
   return (
     <div className="container mx-auto px-4 sm:px-6 lg:px-8">
       {/* Hero Section */}
@@ -39,7 +41,7 @@ export default function Home() {
             </h1>
             
             <h2 className="text-xl lg:text-2xl text-blue-400 font-medium mb-6">
-              {personalInfo.title}
+              {t('home.title')}
             </h2>
             
             <div className="flex items-center justify-center lg:justify-start gap-2 text-gray-300 mb-6">
@@ -58,7 +60,7 @@ export default function Home() {
                 className="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-colors"
               >
                 <Mail size={20} />
-                Get in touch
+                {t('home.getInTouch')}
               </a>
               
               <a
@@ -68,7 +70,7 @@ export default function Home() {
                 className="inline-flex items-center gap-2 px-6 py-3 border border-gray-600 hover:border-gray-500 text-white font-medium rounded-lg transition-colors hover:bg-gray-800"
               >
                 <Github size={20} />
-                View GitHub
+                {t('home.viewGithub')}
               </a>
             </div>
           </div>
@@ -83,13 +85,13 @@ export default function Home() {
             className="group p-8 bg-gray-800 rounded-lg hover:bg-gray-750 transition-colors"
           >
             <h3 className="text-2xl font-semibold text-white mb-3 group-hover:text-blue-400 transition-colors">
-              View My Projects
+              {t('home.viewProjects')}
             </h3>
             <p className="text-gray-300 mb-4">
-              Explore my latest work including web applications, dashboards, and learning platforms.
+              {t('home.viewProjectsDesc')}
             </p>
             <div className="flex items-center text-blue-400 group-hover:text-blue-300">
-              <span className="mr-2">See all projects</span>
+              <span className="mr-2">{t('home.seeAllProjects')}</span>
               <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
             </div>
           </Link>
@@ -99,13 +101,13 @@ export default function Home() {
             className="group p-8 bg-gray-800 rounded-lg hover:bg-gray-750 transition-colors"
           >
             <h3 className="text-2xl font-semibold text-white mb-3 group-hover:text-blue-400 transition-colors">
-              My Skills
+              {t('home.mySkills')}
             </h3>
             <p className="text-gray-300 mb-4">
-              Discover the technologies and tools I use to build modern web applications.
+              {t('home.mySkillsDesc')}
             </p>
             <div className="flex items-center text-blue-400 group-hover:text-blue-300">
-              <span className="mr-2">View skills</span>
+              <span className="mr-2">{t('home.viewSkills')}</span>
               <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
             </div>
           </Link>

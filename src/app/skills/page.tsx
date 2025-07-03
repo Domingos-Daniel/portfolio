@@ -1,14 +1,13 @@
-import { Metadata } from 'next';
+'use client';
+
 import SkillCard from '@/components/SkillCard';
 import { skills } from '@/data/portfolio';
 import type { Skill } from '@/types';
-
-export const metadata: Metadata = {
-  title: 'Skills - Domingos Manuel Daniel',
-  description: 'Discover the technologies and tools I use to build modern web applications, from frontend frameworks to development tools.',
-};
+import { useTranslation } from 'react-i18next';
 
 export default function SkillsPage() {
+  const { t } = useTranslation();
+  
   // Group skills by category
   const groupedSkills = skills.reduce((acc, skill) => {
     if (!acc[skill.category]) {
@@ -26,11 +25,10 @@ export default function SkillsPage() {
       {/* Header */}
       <div className="text-center mb-16">
         <h1 className="text-4xl lg:text-5xl font-bold text-white mb-6">
-          My Skills
+          {t('skills.title')}
         </h1>
         <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-          These are the technologies and tools I use to build modern, scalable, and user-friendly web applications. 
-          I&apos;m always learning and exploring new technologies to stay current with industry trends.
+          {t('skills.subtitle')}
         </p>
       </div>
 
@@ -45,7 +43,7 @@ export default function SkillsPage() {
                 category === 'Tools' ? 'bg-purple-500' :
                 'bg-gray-500'
               }`}></span>
-              {category}
+              {t(`skills.categories.${category.toLowerCase()}`)}
             </h2>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
               {groupedSkills[category].map((skill) => (

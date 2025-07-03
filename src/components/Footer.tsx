@@ -1,8 +1,12 @@
-import { ArrowRight, Github, Mail, MapPin } from 'lucide-react';
+'use client';
+
+import { Github, Mail, MapPin, Phone } from 'lucide-react';
 import { contact } from '@/data/portfolio';
+import { useTranslation } from 'react-i18next';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
+  const { t } = useTranslation();
 
   return (
     <footer className="bg-gray-900 border-t border-gray-800">
@@ -27,7 +31,7 @@ const Footer = () => {
               aria-label="GitHub"
             >
               <Github size={20} />
-              <span className="hidden sm:inline">GitHub</span>
+              <span className="hidden sm:inline">{t('footer.github')}</span>
             </a>
             
             <div className="flex items-center space-x-2 text-gray-300">
@@ -42,13 +46,13 @@ const Footer = () => {
               aria-label="Phone"
             >
               <span className="hidden sm:inline">{contact.phone}</span>
-              <ArrowRight size={20} />
+              <Phone size={20} />
             </a>
           </div>
 
           {/* Copyright */}
           <p className="text-gray-400 text-sm text-center md:text-right">
-            © {currentYear} Domingos Manuel Daniel. All rights reserved.
+            © {currentYear} Domingos Manuel Daniel. {t('footer.copyright')}
           </p>
         </div>
       </div>

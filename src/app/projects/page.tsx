@@ -1,23 +1,21 @@
-import { Metadata } from 'next';
+'use client';
+
 import ProjectCard from '@/components/ProjectCard';
 import { projects } from '@/data/portfolio';
-
-export const metadata: Metadata = {
-  title: 'Projects - Domingos Manuel Daniel',
-  description: 'Explore my latest web development projects including learning platforms, management systems, and dashboards.',
-};
+import { useTranslation } from 'react-i18next';
 
 export default function ProjectsPage() {
+  const { t } = useTranslation();
+
   return (
     <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
       {/* Header */}
       <div className="text-center mb-16">
         <h1 className="text-4xl lg:text-5xl font-bold text-white mb-6">
-          My Projects
+          {t('projects.title')}
         </h1>
         <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-          Here are some of the projects I&apos;ve worked on. Each project showcases different aspects of modern web development, 
-          from learning platforms to management systems and real-time dashboards.
+          {t('projects.subtitle')}
         </p>
       </div>
 

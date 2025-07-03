@@ -3,12 +3,24 @@
 import Image from 'next/image';
 import { Github } from 'lucide-react';
 import type { Project } from '@/types';
+import { useTranslation } from 'react-i18next';
 
 interface ProjectCardProps {
   project: Project;
 }
 
 const ProjectCard = ({ project }: ProjectCardProps) => {
+  const { t } = useTranslation();
+  
+  // Get translated description based on project name
+  const getProjectDescription = (projectName: string) => {
+    const projectKey = projectName.toLowerCase().replace(/\s+/g, '').replace(/-/g, '');
+    const translationKey = `projects.projects.${projectKey}.description`;
+    const translated = t(translationKey);
+    
+    // If translation exists and is different from the key, use it; otherwise use fallback
+    return translated !== translationKey ? translated : project.description;
+  };
   return (
     <div className="bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
       {/* Project Image */}
@@ -30,7 +42,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
       <div className="p-6">
         <h3 className="text-xl font-semibold text-white mb-2">{project.name}</h3>
         <p className="text-gray-300 mb-4 text-sm leading-relaxed">
-          {project.description}
+          {getProjectDescription(project.name)}
         </p>
 
         {/* Technologies */}
@@ -56,7 +68,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
             className="flex items-center gap-2 px-4 py-2 bg-gray-700 hover:bg-gray-600 text-white text-sm rounded-md transition-colors"
           >
             <Github size={16} />
-            View on GitHub
+            {t('projects.viewOnGithub')}
           </a>
         </div>
       </div>

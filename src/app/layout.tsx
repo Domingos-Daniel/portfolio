@@ -3,6 +3,8 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import I18nProvider from "@/components/I18nProvider";
+import LanguageSwitch from "@/components/LanguageSwitch";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -38,13 +40,16 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <body className={`${inter.variable} font-sans bg-gray-900 text-white antialiased`}>
-        <div className="min-h-screen flex flex-col">
-          <Header />
-          <main className="flex-grow">
-            {children}
-          </main>
-          <Footer />
-        </div>
+        <I18nProvider>
+          <div className="min-h-screen flex flex-col">
+            <Header />
+            <main className="flex-grow">
+              {children}
+            </main>
+            <Footer />
+            <LanguageSwitch />
+          </div>
+        </I18nProvider>
       </body>
     </html>
   );
