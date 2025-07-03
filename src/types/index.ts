@@ -15,6 +15,7 @@ export interface Skill {
 export interface Contact {
   email: string;
   github: string;
+  linkedin: string;
   location: string;
   phone: string;
 }

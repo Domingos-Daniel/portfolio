@@ -11,6 +11,7 @@ export const personalInfo = {
 export const contact: Contact = {
     email: 'domingoscahandadaniel@gmail.com',
     github: 'https://github.com/Domingos-Daniel',
+    linkedin: 'https://www.linkedin.com/in/domingos-daniel-47b80728b/',
     location: 'Luanda, Angola',
     phone: '+244 949 901 350'
 };

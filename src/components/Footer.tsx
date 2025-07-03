@@ -1,6 +1,6 @@
 'use client';
 
-import { Github, Mail, MapPin, Phone } from 'lucide-react';
+import { Github, Mail, MapPin, Phone, Linkedin } from 'lucide-react';
 import { contact } from '@/data/portfolio';
 import { useTranslation } from 'react-i18next';
 import Link from 'next/link';
@@ -87,6 +87,16 @@ const Footer = () => {
                 aria-label="GitHub"
               >
                 <Github size={20} className="text-gray-300 group-hover:text-white transition-colors" />
+              </a>
+              
+              <a
+                href={contact.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group p-3 bg-gray-800/50 rounded-xl hover:bg-blue-700/50 transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-blue-900/50"
+                aria-label="LinkedIn"
+              >
+                <Linkedin size={20} className="text-gray-300 group-hover:text-blue-400 transition-colors" />
               </a>
             </div>
           </div>

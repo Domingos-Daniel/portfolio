@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { Github, Mail, MapPin, ArrowRight } from 'lucide-react';
+import { Github, Mail, MapPin, ArrowRight, Linkedin } from 'lucide-react';
 import { personalInfo, contact } from '@/data/portfolio';
 import { useTranslation } from 'react-i18next';
 
@@ -71,6 +71,16 @@ export default function Home() {
               >
                 <Github size={20} />
                 {t('home.viewGithub')}
+              </a>
+              
+              <a
+                href={contact.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-medium rounded-lg transition-all duration-300"
+              >
+                <Linkedin size={20} />
+                {t('home.viewLinkedin')}
               </a>
             </div>
           </div>
