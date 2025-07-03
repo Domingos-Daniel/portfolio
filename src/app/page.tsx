@@ -50,7 +50,7 @@ export default function Home() {
             </div>
             
             <p className="text-lg text-gray-300 leading-relaxed mb-8 max-w-2xl">
-              {personalInfo.bio}
+              {t('home.bio')}
             </p>
             
             {/* Action Buttons */}

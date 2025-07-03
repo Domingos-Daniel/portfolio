@@ -1,10 +1,15 @@
+'use client';
+
 import type { Skill } from '@/types';
+import { useTranslation } from 'react-i18next';
 
 interface SkillCardProps {
   skill: Skill;
 }
 
 const SkillCard = ({ skill }: SkillCardProps) => {
+  const { t } = useTranslation();
+
   const getCategoryColor = (category: string) => {
     switch (category) {
       case 'Frontend':
@@ -18,6 +23,11 @@ const SkillCard = ({ skill }: SkillCardProps) => {
     }
   };
 
+  const getCategoryTranslation = (category: string) => {
+    const categoryKey = category.toLowerCase();
+    return t(`skills.categories.${categoryKey}`);
+  };
+
   return (
     <div className="bg-gray-800 rounded-lg p-4 hover:bg-gray-750 transition-colors">
       <div className="flex items-center justify-between">
@@ -27,7 +37,7 @@ const SkillCard = ({ skill }: SkillCardProps) => {
             skill.category
           )}`}
         >
-          {skill.category}
+          {getCategoryTranslation(skill.category)}
         </span>
       </div>
     </div>

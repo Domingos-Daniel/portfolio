@@ -16,6 +16,7 @@ const resources = {
       // Home Page
       home: {
         title: 'Frontend Developer',
+        bio: 'Frontend Developer with a passion for building clean, responsive, and user-friendly interfaces using React and TypeScript. Focused on scalable and maintainable solutions.',
         getInTouch: 'Get in touch',
         viewGithub: 'View GitHub',
         viewProjects: 'View My Projects',
@@ -32,6 +33,11 @@ const resources = {
         subtitle: 'Here are some of the projects I\'ve worked on recently',
         viewOnGithub: 'View on GitHub',
         technologies: 'Technologies',
+        andSoMuchMore: 'And so much more...',
+        glimpseText: 'These projects are just a glimpse into my work. I\'ve tackled various challenges and technologies, always striving to learn and improve.',
+        interestedWorking: 'Interested in working together?',
+        discussOpportunities: 'I\'m always open to discussing new opportunities and exciting projects.',
+        getInTouch: 'Get in touch',
         projects: {
           lcjEduca: {
             name: 'LCJ-Educa',
@@ -52,6 +58,10 @@ const resources = {
           posTerminal: {
             name: 'POS Terminal Control',
             description: 'Dashboard for bank agents to manage POS terminals and transactions.'
+          },
+          medConsulta: {
+            name: 'MedConsulta',
+            description: 'Online platform for medical consultations with patient profiles and appointment management.'
           }
         }
       },
@@ -65,7 +75,13 @@ const resources = {
           backend: 'Backend',
           tools: 'Tools',
           other: 'Other'
-        }
+        },
+        continuousLearning: 'Continuous Learning',
+        continuousLearningDesc: 'Technology evolves rapidly, and I believe in the importance of continuous learning. I regularly explore new frameworks, tools, and best practices to deliver cutting-edge solutions and maintain high-quality standards in my work.',
+        buildTogether: 'Let\'s Build Something Together',
+        buildTogetherDesc: 'Have a project in mind? I\'d love to hear about it and discuss how we can bring your ideas to life.',
+        contactMe: 'Contact Me',
+        viewGithub: 'View GitHub'
       },
       
       // Footer
@@ -95,6 +111,7 @@ const resources = {
       // Home Page
       home: {
         title: 'Desenvolvedor Frontend',
+        bio: 'Desenvolvedor Frontend com paixão por construir interfaces limpas, responsivas e amigáveis ao usuário usando React e TypeScript. Focado em soluções escaláveis e de fácil manutenção.',
         getInTouch: 'Entre em contato',
         viewGithub: 'Ver GitHub',
         viewProjects: 'Ver Meus Projetos',
@@ -111,6 +128,11 @@ const resources = {
         subtitle: 'Aqui estão alguns dos projetos em que trabalhei recentemente',
         viewOnGithub: 'Ver no GitHub',
         technologies: 'Tecnologias',
+        andSoMuchMore: 'E muito mais...',
+        glimpseText: 'Estes projetos são apenas uma amostra do meu trabalho. Enfrentei vários desafios e tecnologias, sempre me esforçando para aprender e melhorar.',
+        interestedWorking: 'Interessado em trabalhar junto?',
+        discussOpportunities: 'Estou sempre aberto a discutir novas oportunidades e projetos empolgantes.',
+        getInTouch: 'Entre em contato',
         projects: {
           lcjEduca: {
             name: 'LCJ-Educa',
@@ -131,6 +153,10 @@ const resources = {
           posTerminal: {
             name: 'Controle de Terminal POS',
             description: 'Dashboard para agentes bancários gerenciarem terminais POS e transações.'
+          },
+          medConsulta: {
+            name: 'MedConsulta',
+            description: 'Plataforma online para consultas médicas com perfis de pacientes e gestão de agendamentos.'
           }
         }
       },
@@ -144,7 +170,13 @@ const resources = {
           backend: 'Backend',
           tools: 'Ferramentas',
           other: 'Outras'
-        }
+        },
+        continuousLearning: 'Aprendizado Contínuo',
+        continuousLearningDesc: 'A tecnologia evolui rapidamente, e acredito na importância do aprendizado contínuo. Exploro regularmente novos frameworks, ferramentas e melhores práticas para entregar soluções de ponta e manter altos padrões de qualidade no meu trabalho.',
+        buildTogether: 'Vamos Construir Algo Juntos',
+        buildTogetherDesc: 'Tem um projeto em mente? Adoraria ouvir sobre ele e discutir como podemos dar vida às suas ideias.',
+        contactMe: 'Entre em Contato',
+        viewGithub: 'Ver GitHub'
       },
       
       // Footer

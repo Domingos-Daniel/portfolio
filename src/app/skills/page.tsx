@@ -58,12 +58,10 @@ export default function SkillsPage() {
       <div className="mt-16">
         <div className="bg-gray-800 rounded-lg p-8 max-w-4xl mx-auto">
           <h2 className="text-2xl font-semibold text-white mb-4 text-center">
-            Continuous Learning
+            {t('skills.continuousLearning')}
           </h2>
           <p className="text-gray-300 text-center leading-relaxed">
-            Technology evolves rapidly, and I believe in the importance of continuous learning. 
-            I regularly explore new frameworks, tools, and best practices to deliver cutting-edge solutions 
-            and maintain high-quality standards in my work.
+            {t('skills.continuousLearningDesc')}
           </p>
         </div>
       </div>
@@ -72,17 +70,17 @@ export default function SkillsPage() {
       <div className="mt-12 text-center">
         <div className="bg-gradient-to-r from-blue-900/20 to-purple-900/20 rounded-lg p-8 max-w-2xl mx-auto border border-blue-800/30">
           <h2 className="text-2xl font-semibold text-white mb-4">
-            Let&apos;s Build Something Together
+            {t('skills.buildTogether')}
           </h2>
           <p className="text-gray-300 mb-6">
-            Have a project in mind? I&apos;d love to hear about it and discuss how we can bring your ideas to life.
+            {t('skills.buildTogetherDesc')}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="mailto:domingoscahandadaniel@gmail.com"
               className="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-colors"
             >
-              Contact Me
+              {t('skills.contactMe')}
             </a>
             <a
               href="https://github.com/Domingos-Daniel"
@@ -90,7 +88,7 @@ export default function SkillsPage() {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-6 py-3 border border-gray-600 hover:border-gray-500 text-white font-medium rounded-lg transition-colors hover:bg-gray-800"
             >
-              View GitHub
+              {t('skills.viewGithub')}
             </a>
           </div>
         </div>

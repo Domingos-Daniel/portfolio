@@ -14,12 +14,26 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
   
   // Get translated description based on project name
   const getProjectDescription = (projectName: string) => {
-    const projectKey = projectName.toLowerCase().replace(/\s+/g, '').replace(/-/g, '');
-    const translationKey = `projects.projects.${projectKey}.description`;
-    const translated = t(translationKey);
+    // Mapeamento de nomes de projetos para chaves de tradução
+    const projectKeyMap: { [key: string]: string } = {
+      'LCJ-Educa': 'lcjEduca',
+      'Art-Ngola': 'artNgola',
+      'Ango-Educa': 'angoEduca',
+      'ATM Management System': 'atmManagement',
+      'POS Terminal Control': 'posTerminal',
+      'MedConsulta': 'medConsulta'
+    };
     
-    // If translation exists and is different from the key, use it; otherwise use fallback
-    return translated !== translationKey ? translated : project.description;
+    const projectKey = projectKeyMap[projectName];
+    if (projectKey) {
+      const translationKey = `projects.projects.${projectKey}.description`;
+      const translated = t(translationKey);
+      // Se a tradução existe e é diferente da chave, usa ela; senão usa fallback
+      return translated !== translationKey ? translated : project.description;
+    }
+    
+    // Fallback para a descrição original se não encontrar mapeamento
+    return project.description;
   };
   return (
     <div className="bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">

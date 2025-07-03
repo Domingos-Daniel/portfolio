@@ -29,10 +29,10 @@ export default function ProjectsPage() {
       {/* And so much more section */}
       <div className="mt-16 text-center">
         <h2 className="text-2xl font-semibold text-white mb-4">
-          And so much more...
+          {t('projects.andSoMuchMore')}
         </h2>
         <p className="text-gray-300 mb-6">
-          These projects are just a glimpse into my work. I&apos;ve tackled various challenges and technologies, always striving to learn and improve.
+          {t('projects.glimpseText')}
         </p>
       </div>
 
@@ -40,16 +40,16 @@ export default function ProjectsPage() {
       <div className="mt-16 text-center">
         <div className="bg-gray-800 rounded-lg p-8 max-w-2xl mx-auto">
           <h2 className="text-2xl font-semibold text-white mb-4">
-            Interested in working together?
+            {t('projects.interestedWorking')}
           </h2>
           <p className="text-gray-300 mb-6">
-            I&apos;m always open to discussing new opportunities and exciting projects.
+            {t('projects.discussOpportunities')}
           </p>
           <a
             href="mailto:domingoscahandadaniel@gmail.com"
             className="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-colors"
           >
-            Get in touch
+            {t('projects.getInTouch')}
           </a>
         </div>
       </div>
