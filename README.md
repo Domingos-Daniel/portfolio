@@ -1,36 +1,103 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Domingos Manuel Daniel - Portfolio
 
-## Getting Started
+A modern, minimalist portfolio website built with Next.js 15, TypeScript, and Tailwind CSS. Features a dark theme design and is optimized for deployment on Vercel.
 
-First, run the development server:
+## 🚀 Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **Modern Stack**: Built with Next.js 15, TypeScript, and Tailwind CSS
+- **Dark Theme**: Clean, professional dark theme design
+- **Responsive**: Fully responsive design for all screen sizes
+- **App Router**: Uses Next.js App Router for optimal performance
+- **SEO Optimized**: Proper metadata and semantic HTML structure
+- **Fast Loading**: Optimized images and fonts for quick load times
+
+## 📄 Pages
+
+- **Home**: Introduction with profile photo, bio, and contact information
+- **Projects**: Showcase of development projects with descriptions and tech stacks
+- **Skills**: Overview of technical skills organized by category
+
+## 🛠️ Tech Stack
+
+- **Framework**: Next.js 15
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **Icons**: Lucide React
+- **Deployment**: Vercel
+
+## 🏗️ Project Structure
+
+```
+src/
+├── app/                 # App Router pages
+│   ├── projects/       # Projects page
+│   ├── skills/         # Skills page
+│   ├── layout.tsx      # Root layout
+│   └── page.tsx        # Home page
+├── components/         # Reusable React components
+│   ├── Header.tsx      # Navigation header
+│   ├── Footer.tsx      # Site footer
+│   ├── ProjectCard.tsx # Project display card
+│   └── SkillCard.tsx   # Skill display card
+├── data/              # Static data
+│   └── portfolio.ts   # Portfolio data (projects, skills, etc.)
+└── types/             # TypeScript type definitions
+    └── index.ts
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Getting Started
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/Domingos-Daniel/portfolio.git
+   cd portfolio
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-## Learn More
+3. **Start the development server**
+   ```bash
+   npm run dev
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+4. **Open your browser**
+   Navigate to [http://localhost:3000](http://localhost:3000)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📦 Available Scripts
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm start` - Start production server
+- `npm run lint` - Run ESLint
 
-## Deploy on Vercel
+## 🌐 Deployment
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This project is optimized for deployment on Vercel:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. **Push to GitHub**
+2. **Connect to Vercel**
+3. **Deploy automatically**
+
+The project includes all necessary configuration for seamless Vercel deployment.
+
+## 🎨 Customization
+
+To customize the portfolio for your own use:
+
+1. **Update personal information** in `src/data/portfolio.ts`
+2. **Replace placeholder images** in the `public/` directory
+3. **Modify colors** in `tailwind.config.ts`
+4. **Update metadata** in `src/app/layout.tsx`
+
+## 📧 Contact
+
+- **Email**: domingoscahandadaniel@gmail.com
+- **GitHub**: [Domingos-Daniel](https://github.com/Domingos-Daniel)
+- **Location**: Luanda, Angola
+
+## 📝 License
+
+This project is open source and available under the [MIT License](LICENSE).
