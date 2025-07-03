@@ -79,6 +79,7 @@ export const skills: Skill[] = [
     { name: 'REST APIs', category: 'Backend' },
     { name: 'PhP', category: 'Backend' },
     { name: 'Laravel', category: 'Backend' },
+    { name: 'Asp.Net', category: 'Backend' },
     { name: 'MySQL', category: 'Backend' },
     { name: 'Node.js', category: 'Backend' },
     { name: 'Express.js', category: 'Backend' },
