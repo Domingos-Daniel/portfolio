@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Languages, ChevronDown } from 'lucide-react';
+import { ChevronDown } from 'lucide-react';
 
 const LanguageSwitch = () => {
   const { i18n, t } = useTranslation();
