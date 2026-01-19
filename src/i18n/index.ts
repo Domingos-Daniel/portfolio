@@ -33,6 +33,7 @@ const resources = {
         title: 'My Projects',
         subtitle: 'Here are some of the projects I\'ve worked on recently',
         viewOnGithub: 'View on GitHub',
+        viewLive: 'View Live',
         technologies: 'Technologies',
         andSoMuchMore: 'And so much more...',
         glimpseText: 'These projects are just a glimpse into my work. I\'ve tackled various challenges and technologies, always striving to learn and improve.',
@@ -63,6 +64,14 @@ const resources = {
           medConsulta: {
             name: 'MedConsulta',
             description: 'Online platform for medical consultations with patient profiles and appointment management.'
+          },
+          meuCv: {
+            name: 'Meu CV',
+            description: 'Professional AI-powered SaaS platform for creating custom documents with intelligent templates, real-time collaboration, and advanced formatting. Built with cutting-edge technology to deliver professional-grade CVs and documents.'
+          },
+          angoEducaV2: {
+            name: 'Ango Educa V2',
+            description: 'Advanced school management platform serving 300+ active users daily. Features real-time analytics, student tracking, grade management, and interactive dashboards. Built with Laravel and modern frontend technologies for exceptional performance.'
           }
         }
       },
@@ -95,13 +104,19 @@ const resources = {
         quickLinks: 'Quick Links',
         followMe: 'Follow Me',
         madeWith: 'Made with',
-        using: 'using'
+        using: 'using',
+        language: 'Language'
       },
       
       // Language
       language: {
         portuguese: 'Português',
-        english: 'English'
+        english: 'English',
+        switchLanguage: 'Switch language',
+        selectLanguage: 'Select language',
+        switchTo: 'Switch to',
+        open: 'Open menu',
+        close: 'Close menu'
       }
     }
   },
@@ -134,6 +149,7 @@ const resources = {
         title: 'Meus Projetos',
         subtitle: 'Aqui estão alguns dos projetos em que trabalhei recentemente',
         viewOnGithub: 'Ver no GitHub',
+        viewLive: 'Ver Ao Vivo',
         technologies: 'Tecnologias',
         andSoMuchMore: 'E muito mais...',
         glimpseText: 'Estes projetos são apenas uma amostra do meu trabalho. Enfrentei vários desafios e tecnologias, sempre me esforçando para aprender e melhorar.',
@@ -164,6 +180,14 @@ const resources = {
           medConsulta: {
             name: 'MedConsulta',
             description: 'Plataforma online para consultas médicas com perfis de pacientes e gestão de agendamentos.'
+          },
+          meuCv: {
+            name: 'Meu CV',
+            description: 'Plataforma SaaS profissional com IA para criar documentos personalizados com templates inteligentes, colaboração em tempo real e formatação avançada. Construído com tecnologia de ponta para entregar CVs e documentos de nível profissional.'
+          },
+          angoEducaV2: {
+            name: 'Ango Educa V2',
+            description: 'Plataforma avançada de gestão escolar atendendo mais de 300 usuários ativos diariamente. Recursos incluem análises em tempo real, rastreamento de alunos, gestão de notas e dashboards interativos. Construído com Laravel e tecnologias frontend modernas para desempenho excepcional.'
           }
         }
       },
@@ -196,13 +220,19 @@ const resources = {
         quickLinks: 'Links Rápidos',
         followMe: 'Siga-me',
         madeWith: 'Feito com',
-        using: 'usando'
+        using: 'usando',
+        language: 'Idioma'
       },
       
       // Language
       language: {
         portuguese: 'Português',
-        english: 'English'
+        english: 'English',
+        switchLanguage: 'Trocar idioma',
+        selectLanguage: 'Selecionar idioma',
+        switchTo: 'Mudar para',
+        open: 'Abrir menu',
+        close: 'Fechar menu'
       }
     }
   }

@@ -19,14 +19,33 @@ export const contact: Contact = {
 export const projects: Project[] = [
     {
         id: '1',
+        name: 'Meu CV',
+        description: 'Professional AI-powered SaaS platform for creating custom documents with intelligent templates and real-time collaboration.',
+        technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'OpenAI', 'GitHub Copilot'],
+        githubUrl: 'https://github.com/Domingos-Daniel',
+        liveUrl: 'https://meu-cv.com',
+        imageUrl: '/meu-cv.png'
+    },
+    {
+        id: '2',
+        name: 'Ango Educa V2',
+        description: 'Advanced school management platform serving 300+ active users with real-time analytics and modern tech stack.',
+        technologies: ['Laravel', 'PHP 8.1', 'Vue.js', 'Livewire', 'MySQL'],
+        githubUrl: 'https://github.com/Domingos-Daniel',
+        liveUrl: 'https://ango-educa.com',
+        imageUrl: '/ango-educa-v2.png'
+    },
+    {
+        id: '3',
         name: 'LCJ-Educa',
         description: 'Online learning platform with student areas, articles, paid plans, and offline access.',
         technologies: ['React', 'TypeScript', 'REST APIs', 'Node.js'],
         githubUrl: 'https://github.com/Domingos-Daniel',
+        liveUrl: 'https://lcj-educa.com',
         imageUrl: '/lcj (1).png'
     },
     {
-        id: '2',
+        id: '4',
         name: 'Art-Ngola',
         description: 'Digital art promotion portal with multimedia uploads and artist profiles.',
         technologies: ['React', 'TypeScript', 'Next.js', 'Tailwind CSS'],
@@ -34,7 +53,7 @@ export const projects: Project[] = [
         imageUrl: '/art-ngola.png'
     },
     {
-        id: '3',
+        id: '5',
         name: 'Ango-Educa',
         description: 'Modular school management system with dynamic dashboards.',
         technologies: ['React', 'TypeScript', 'REST APIs', 'Chart.js'],
@@ -42,7 +61,7 @@ export const projects: Project[] = [
         imageUrl: '/ango-educa.png'
     },
     {
-        id: '4',
+        id: '6',
         name: 'ATM Management System',
         description: 'Real-time monitoring interface for ATMs across regions.',
         technologies: ['React', 'TypeScript', 'REST APIs', 'WebSocket'],
@@ -50,7 +69,7 @@ export const projects: Project[] = [
         imageUrl: '/atm-dashboard.jpg'
     },
     {
-        id: '5',
+        id: '7',
         name: 'POS Terminal Control',
         description: 'Dashboard for bank agents to manage POS terminals and transactions.',
         technologies: ['React', 'TypeScript', 'REST APIs', 'MUI'],
@@ -58,7 +77,7 @@ export const projects: Project[] = [
         imageUrl: '/tpa.jpg'
     },
     {
-        id: '6',
+        id: '8',
         name: 'MedConsulta',
         description: 'Online platform for medical consultations with patient profiles and appointment management.',
         technologies: ['Tailwind CSS', 'Next.js', 'TypeScript'],
@@ -73,6 +92,7 @@ export const skills: Skill[] = [
     { name: 'JavaScript', category: 'Frontend' },
     { name: 'TypeScript', category: 'Frontend' },
     { name: 'React', category: 'Frontend' },
+    { name: 'Vue.js', category: 'Frontend' },
     { name: 'Next.js', category: 'Frontend' },
     { name: 'Tailwind CSS', category: 'Frontend' },
     { name: 'MUI', category: 'Frontend' },
@@ -90,5 +110,7 @@ export const skills: Skill[] = [
     { name: 'GitHub', category: 'Tools' },
     { name: 'Docker', category: 'Tools' },
     { name: 'CI/CD', category: 'Tools' },
-    { name: 'Git/GitHub', category: 'Tools' }
+    { name: 'GitHub Copilot', category: 'Tools' },
+    { name: 'OpenAI', category: 'Tools' },
+    { name: 'AI/ML', category: 'Tools' }
 ];

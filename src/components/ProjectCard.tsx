@@ -21,7 +21,9 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
       'Ango-Educa': 'angoEduca',
       'ATM Management System': 'atmManagement',
       'POS Terminal Control': 'posTerminal',
-      'MedConsulta': 'medConsulta'
+      'MedConsulta': 'medConsulta',
+      'Meu CV': 'meuCv',
+      'Ango Educa V2': 'angoEducaV2'
     };
     
     const projectKey = projectKeyMap[projectName];
@@ -91,11 +93,24 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
 
         {/* Action Buttons */}
         <div className="flex gap-3">
+          {project.liveUrl && (
+            <a
+              href={project.liveUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex-1 flex items-center justify-center gap-2 px-4 py-2 bg-gradient-to-r from-blue-600/80 to-purple-600/80 hover:from-blue-500/90 hover:to-purple-500/90 text-white text-sm rounded-lg transition-all duration-300 backdrop-blur-sm border border-blue-500/50 hover:border-blue-400/70 hover:scale-105 hover:shadow-lg hover:shadow-blue-500/30"
+            >
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+              </svg>
+              {t('projects.viewLive')}
+            </a>
+          )}
           <a
             href={project.githubUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-gray-800/80 to-gray-700/80 hover:from-blue-600/80 hover:to-purple-600/80 text-white text-sm rounded-lg transition-all duration-300 backdrop-blur-sm border border-gray-600/30 hover:border-blue-500/50 hover:scale-105 hover:shadow-lg hover:shadow-blue-500/25"
+            className={`${project.liveUrl ? 'flex-1' : 'w-full'} flex items-center justify-center gap-2 px-4 py-2 bg-gradient-to-r from-gray-800/80 to-gray-700/80 hover:from-blue-600/80 hover:to-purple-600/80 text-white text-sm rounded-lg transition-all duration-300 backdrop-blur-sm border border-gray-600/30 hover:border-blue-500/50 hover:scale-105 hover:shadow-lg hover:shadow-blue-500/25`}
           >
             <Github size={16} className="group-hover:rotate-12 transition-transform duration-300" />
             {t('projects.viewOnGithub')}

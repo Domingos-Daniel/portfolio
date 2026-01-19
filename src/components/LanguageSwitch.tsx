@@ -34,7 +34,11 @@ const LanguageSwitch = () => {
       <div className="relative">
         {/* Dropdown Menu */}
         {isOpen && (
-          <div className="absolute bottom-full mb-2 right-0 bg-gray-800 border border-gray-700 rounded-lg shadow-xl min-w-[160px] overflow-hidden">
+          <div 
+            className="absolute bottom-full mb-2 right-0 bg-gray-800 border border-gray-700 rounded-lg shadow-xl min-w-[160px] overflow-hidden"
+            role="menu"
+            aria-label={t('language.selectLanguage') || 'Select language'}
+          >
             {languages.map((language) => (
               <button
                 key={language.code}
@@ -44,6 +48,9 @@ const LanguageSwitch = () => {
                     ? 'bg-blue-900/30 text-blue-300' 
                     : 'text-gray-300'
                 }`}
+                role="menuitem"
+                aria-label={`${t('language.switchTo') || 'Switch to'} ${language.name}`}
+                aria-current={i18n.language === language.code ? 'true' : 'false'}
               >
                 <span className="text-lg">{language.flag}</span>
                 <span className="text-sm font-medium">{language.name}</span>
@@ -58,12 +65,21 @@ const LanguageSwitch = () => {
         {/* Main Button */}
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="bg-gray-800 hover:bg-gray-700 border border-gray-600 text-white p-3 rounded-full shadow-lg transition-all duration-200 flex items-center gap-2 group"
-          aria-label="Change language"
+          className="bg-gray-800 hover:bg-gray-700 border border-gray-600 text-white px-4 py-3 rounded-full shadow-lg transition-all duration-200 flex items-center gap-2 group"
+          aria-label={`${t('footer.language') || 'Language'}: ${currentLanguage.name}. ${isOpen ? t('language.close') || 'Close menu' : t('language.open') || 'Open menu'}`}
+          aria-expanded={isOpen}
+          aria-haspopup="true"
+          role="button"
+          title={`${t('language.switchLanguage') || 'Switch language'}`}
         >
           <div className="flex items-center gap-2">
             <span className="text-lg">{currentLanguage.flag}</span>
-            <Languages size={20} className="text-gray-300 group-hover:text-white transition-colors" />
+            <span className="text-sm font-medium text-gray-200 group-hover:text-white transition-colors">
+              {currentLanguage.code.toUpperCase()}
+            </span>
+            <span className="hidden sm:inline text-xs text-gray-400 group-hover:text-gray-300 transition-colors">
+              {currentLanguage.name}
+            </span>
             <ChevronDown 
               size={16} 
               className={`text-gray-400 transition-transform duration-200 ${
