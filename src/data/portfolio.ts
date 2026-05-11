@@ -5,7 +5,7 @@ export const personalInfo = {
     title: 'Web Developer',
     location: 'Luanda, Angola',
     bio: 'Frontend Developer with a passion for building clean, responsive, and user-friendly interfaces using React and TypeScript. Focused on scalable and maintainable solutions.',
-    profileImage: '/me.jpg'
+    profileImage: '/me-2.png'
 };
 
 export const contact: Contact = {
@@ -83,6 +83,22 @@ export const projects: Project[] = [
         technologies: ['Tailwind CSS', 'Next.js', 'TypeScript'],
         githubUrl: 'https://github.com/Domingos-Daniel',
         imageUrl: '/medconsulta.png'
+    },
+    {
+        id: '9',
+        name: 'Academix',
+        description: 'Plataforma E-learning angolana com diversas categorias do saber.',
+        technologies: ['Laravel', 'PHP 8.3', 'Vue.js', 'MySQL', 'Tailwind CSS'],
+        githubUrl: 'https://github.com/Domingos-Daniel',
+        imageUrl: '/academix-1.png'
+    },
+    {
+        id: '10',
+        name: 'SafeFacturas',
+        description: 'Sistema desenvolvido para Facturação Electronica em conformidade com a AGT COM DECRETO 71/25.',
+        technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'MySQL'],
+        githubUrl: 'https://github.com/Domingos-Daniel',
+        imageUrl: '/safefacturas-1.png'
     }
 ];
 
@@ -112,5 +128,6 @@ export const skills: Skill[] = [
     { name: 'CI/CD', category: 'Tools' },
     { name: 'GitHub Copilot', category: 'Tools' },
     { name: 'OpenAI', category: 'Tools' },
-    { name: 'AI/ML', category: 'Tools' }
+    { name: 'AI/ML', category: 'Tools' },
+    { name: 'Claude Models', category: 'Tools' }
 ];

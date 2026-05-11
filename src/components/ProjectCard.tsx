@@ -23,7 +23,9 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
       'POS Terminal Control': 'posTerminal',
       'MedConsulta': 'medConsulta',
       'Meu CV': 'meuCv',
-      'Ango Educa V2': 'angoEducaV2'
+      'Ango Educa V2': 'angoEducaV2',
+      'Academix': 'academix',
+      'SafeFacturas': 'safeFacturas'
     };
     
     const projectKey = projectKeyMap[projectName];

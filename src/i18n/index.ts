@@ -72,6 +72,14 @@ const resources = {
           angoEducaV2: {
             name: 'Ango Educa V2',
             description: 'Advanced school management platform serving 300+ active users daily. Features real-time analytics, student tracking, grade management, and interactive dashboards. Built with Laravel and modern frontend technologies for exceptional performance.'
+          },
+          academix: {
+            name: 'Academix',
+            description: 'Angolan e-learning platform with various categories of knowledge.'
+          },
+          safeFacturas: {
+            name: 'SafeFacturas',
+            description: 'Electronic Invoicing system developed in compliance with AGT decree 71/25.'
           }
         }
       },
@@ -188,6 +196,14 @@ const resources = {
           angoEducaV2: {
             name: 'Ango Educa V2',
             description: 'Plataforma avançada de gestão escolar atendendo mais de 300 usuários ativos diariamente. Recursos incluem análises em tempo real, rastreamento de alunos, gestão de notas e dashboards interativos. Construído com Laravel e tecnologias frontend modernas para desempenho excepcional.'
+          },
+          academix: {
+            name: 'Academix',
+            description: 'Plataforma E-learning angolana com diversas categorias do saber.'
+          },
+          safeFacturas: {
+            name: 'SafeFacturas',
+            description: 'Sistema desenvolvido para Facturação Electronica em conformidade com a AGT COM DECRETO 71/25.'
           }
         }
       },
