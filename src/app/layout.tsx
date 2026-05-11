@@ -12,23 +12,23 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Domingos Manuel Daniel - Frontend Developer",
-  description: "Frontend Developer with a passion for building clean, responsive, and user-friendly interfaces using React and TypeScript.",
-  keywords: ["frontend developer", "react", "typescript", "next.js", "web development", "luanda", "angola"],
+  title: "Domingos Manuel Daniel - Full Stack Developer",
+  description: "Full Stack Developer with 5+ years of experience building robust web applications with React, TypeScript, Next.js, Laravel, and Node.js.",
+  keywords: ["full stack developer", "react", "typescript", "next.js", "laravel", "node.js", "web development", "luanda", "angola"],
   authors: [{ name: "Domingos Manuel Daniel" }],
   creator: "Domingos Manuel Daniel",
   openGraph: {
     type: "website",
     locale: "en_US",
     url: "https://domingos-daniel.vercel.app",
-    title: "Domingos Manuel Daniel - Frontend Developer",
-    description: "Frontend Developer with a passion for building clean, responsive, and user-friendly interfaces using React and TypeScript.",
+    title: "Domingos Manuel Daniel - Full Stack Developer",
+    description: "Full Stack Developer with 5+ years of experience building robust web applications with React, TypeScript, Next.js, Laravel, and Node.js.",
     siteName: "Domingos Daniel Portfolio",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Domingos Manuel Daniel - Frontend Developer",
-    description: "Frontend Developer with a passion for building clean, responsive, and user-friendly interfaces using React and TypeScript.",
+    title: "Domingos Manuel Daniel - Full Stack Developer",
+    description: "Full Stack Developer with 5+ years of experience building robust web applications with React, TypeScript, Next.js, Laravel, and Node.js.",
   },
 };
 

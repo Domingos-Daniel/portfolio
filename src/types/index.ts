@@ -5,7 +5,9 @@ export interface Project {
   technologies: string[];
   githubUrl: string;
   imageUrl: string;
+  images?: string[];
   liveUrl?: string;
+  category?: string;
 }
 
 export interface Skill {

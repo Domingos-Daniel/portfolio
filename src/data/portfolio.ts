@@ -2,9 +2,9 @@ import { Project, Skill, Contact } from '@/types';
 
 export const personalInfo = {
     name: 'Domingos Manuel Daniel',
-    title: 'Web Developer',
+    title: 'Full Stack Developer',
     location: 'Luanda, Angola',
-    bio: 'Frontend Developer with a passion for building clean, responsive, and user-friendly interfaces using React and TypeScript. Focused on scalable and maintainable solutions.',
+    bio: 'Full Stack Developer with 5+ years of experience crafting robust web applications from front to back. Skilled in React, TypeScript, Next.js, Laravel, and Node.js — I build performant, scalable solutions with clean architecture and pixel-perfect interfaces.',
     profileImage: '/me-2.png'
 };
 
@@ -24,7 +24,9 @@ export const projects: Project[] = [
         technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'OpenAI', 'GitHub Copilot'],
         githubUrl: 'https://github.com/Domingos-Daniel',
         liveUrl: 'https://meu-cv.com',
-        imageUrl: '/meu-cv.png'
+        imageUrl: '/meu-cv.png',
+        images: ['/meu-cv.png', '/meu-cv-2.png'],
+        category: 'Web App'
     },
     {
         id: '2',
@@ -33,7 +35,9 @@ export const projects: Project[] = [
         technologies: ['Laravel', 'PHP 8.1', 'Vue.js', 'Livewire', 'MySQL'],
         githubUrl: 'https://github.com/Domingos-Daniel',
         liveUrl: 'https://ango-educa.com',
-        imageUrl: '/ango-educa-v2.png'
+        imageUrl: '/ango-educa-v2.png',
+        images: ['/ango-educa-v2.png', '/ango-educa-v2-2.png'],
+        category: 'Platform'
     },
     {
         id: '3',
@@ -42,7 +46,9 @@ export const projects: Project[] = [
         technologies: ['React', 'TypeScript', 'REST APIs', 'Node.js'],
         githubUrl: 'https://github.com/Domingos-Daniel',
         liveUrl: 'https://lcj-educa.com',
-        imageUrl: '/lcj (1).png'
+        imageUrl: '/lcj (1).png',
+        images: ['/lcj (1).png', '/lcj (2).png'],
+        category: 'Platform'
     },
     {
         id: '4',
@@ -50,7 +56,9 @@ export const projects: Project[] = [
         description: 'Digital art promotion portal with multimedia uploads and artist profiles.',
         technologies: ['React', 'TypeScript', 'Next.js', 'Tailwind CSS'],
         githubUrl: 'https://github.com/Domingos-Daniel',
-        imageUrl: '/art-ngola.png'
+        imageUrl: '/art-ngola.png',
+        images: ['/art-ngola.png'],
+        category: 'Web App'
     },
     {
         id: '5',
@@ -58,7 +66,9 @@ export const projects: Project[] = [
         description: 'Modular school management system with dynamic dashboards.',
         technologies: ['React', 'TypeScript', 'REST APIs', 'Chart.js'],
         githubUrl: 'https://github.com/Domingos-Daniel',
-        imageUrl: '/ango-educa.png'
+        imageUrl: '/ango-educa.png',
+        images: ['/ango-educa.png'],
+        category: 'Platform'
     },
     {
         id: '6',
@@ -66,7 +76,9 @@ export const projects: Project[] = [
         description: 'Real-time monitoring interface for ATMs across regions.',
         technologies: ['React', 'TypeScript', 'REST APIs', 'WebSocket'],
         githubUrl: 'https://github.com/Domingos-Daniel',
-        imageUrl: '/atm-dashboard.jpg'
+        imageUrl: '/atm-dashboard.jpg',
+        images: ['/atm-dashboard.jpg'],
+        category: 'Dashboard'
     },
     {
         id: '7',
@@ -74,7 +86,9 @@ export const projects: Project[] = [
         description: 'Dashboard for bank agents to manage POS terminals and transactions.',
         technologies: ['React', 'TypeScript', 'REST APIs', 'MUI'],
         githubUrl: 'https://github.com/Domingos-Daniel',
-        imageUrl: '/tpa.jpg'
+        imageUrl: '/tpa.jpg',
+        images: ['/tpa.jpg'],
+        category: 'Dashboard'
     },
     {
         id: '8',
@@ -82,23 +96,29 @@ export const projects: Project[] = [
         description: 'Online platform for medical consultations with patient profiles and appointment management.',
         technologies: ['Tailwind CSS', 'Next.js', 'TypeScript'],
         githubUrl: 'https://github.com/Domingos-Daniel',
-        imageUrl: '/medconsulta.png'
+        imageUrl: '/medconsulta.png',
+        images: ['/medconsulta.png'],
+        category: 'Web App'
     },
     {
         id: '9',
         name: 'Academix',
-        description: 'Plataforma E-learning angolana com diversas categorias do saber.',
+        description: 'Angolan e-learning platform offering a rich catalog of courses across multiple knowledge areas with structured learning paths and student progress tracking.',
         technologies: ['Laravel', 'PHP 8.3', 'Vue.js', 'MySQL', 'Tailwind CSS'],
         githubUrl: 'https://github.com/Domingos-Daniel',
-        imageUrl: '/academix-1.png'
+        imageUrl: '/academix-1.png',
+        images: ['/academix-1.png', '/academix-2.png', '/academix-3.png', '/academix-4.png'],
+        category: 'Platform'
     },
     {
         id: '10',
         name: 'SafeFacturas',
-        description: 'Sistema desenvolvido para Facturação Electronica em conformidade com a AGT COM DECRETO 71/25.',
+        description: 'Complete Electronic Invoicing system built in full compliance with AGT Decree 71/25. Automates invoice generation, tax calculation, and regulatory reporting.',
         technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'MySQL'],
         githubUrl: 'https://github.com/Domingos-Daniel',
-        imageUrl: '/safefacturas-1.png'
+        imageUrl: '/safefacturas-1.png',
+        images: ['/safefacturas-1.png'],
+        category: 'Web App'
     }
 ];
 

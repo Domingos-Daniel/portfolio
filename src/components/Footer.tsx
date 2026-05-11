@@ -20,7 +20,7 @@ const Footer = () => {
           
           {/* Contact Section */}
           <div className="space-y-4">
-            <h3 className="text-xl font-semibold bg-gradient-to-r from-blue-300 to-purple-300 bg-clip-text text-transparent">
+            <h3 className="text-xl font-semibold bg-gradient-to-r from-blue-300 to-cyan-300 bg-clip-text text-transparent">
               {t('footer.getInTouch')}
             </h3>
             <div className="space-y-3">
@@ -57,17 +57,20 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div className="space-y-4">
-            <h3 className="text-xl font-semibold bg-gradient-to-r from-purple-300 to-pink-300 bg-clip-text text-transparent">
+            <h3 className="text-xl font-semibold bg-gradient-to-r from-blue-300 to-blue-400 bg-clip-text text-transparent">
               {t('footer.quickLinks')}
             </h3>
             <nav className="space-y-3">
-              <Link href="/" className="block text-gray-300 hover:text-purple-400 transition-colors duration-300 text-sm hover:translate-x-1">
+              <Link href="/" className="block text-gray-300 hover:text-blue-400 transition-colors duration-300 text-sm hover:translate-x-1">
                 {t('nav.home')}
               </Link>
-              <Link href="/projects" className="block text-gray-300 hover:text-purple-400 transition-colors duration-300 text-sm hover:translate-x-1">
+              <Link href="/about" className="block text-gray-300 hover:text-blue-400 transition-colors duration-300 text-sm hover:translate-x-1">
+                {t('nav.about')}
+              </Link>
+              <Link href="/projects" className="block text-gray-300 hover:text-blue-400 transition-colors duration-300 text-sm hover:translate-x-1">
                 {t('nav.projects')}
               </Link>
-              <Link href="/skills" className="block text-gray-300 hover:text-purple-400 transition-colors duration-300 text-sm hover:translate-x-1">
+              <Link href="/skills" className="block text-gray-300 hover:text-blue-400 transition-colors duration-300 text-sm hover:translate-x-1">
                 {t('nav.skills')}
               </Link>
             </nav>
@@ -125,8 +128,8 @@ const Footer = () => {
       </div>
 
       {/* Decorative elements */}
-      <div className="absolute bottom-0 left-1/4 w-32 h-32 bg-gradient-to-br from-blue-500/5 to-purple-500/5 rounded-full blur-3xl"></div>
-      <div className="absolute top-0 right-1/4 w-24 h-24 bg-gradient-to-br from-purple-500/5 to-pink-500/5 rounded-full blur-2xl"></div>
+      <div className="absolute bottom-0 left-1/4 w-32 h-32 bg-gradient-to-br from-blue-500/5 to-cyan-500/5 rounded-full blur-3xl"></div>
+      <div className="absolute top-0 right-1/4 w-24 h-24 bg-gradient-to-br from-blue-500/5 to-cyan-500/5 rounded-full blur-2xl"></div>
     </footer>
   );
 };
