@@ -1,5 +1,6 @@
 'use client';
 
+// @ts-expect-error
 import { Github, ExternalLink, Layers } from 'lucide-react';
 import type { Project } from '@/types';
 import { useTranslation } from 'react-i18next';

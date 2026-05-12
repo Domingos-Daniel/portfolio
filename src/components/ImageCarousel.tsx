@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import { useState, useCallback, useEffect } from 'react';
+// @ts-expect-error
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 

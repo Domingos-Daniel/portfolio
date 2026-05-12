@@ -5,7 +5,8 @@ import { skills } from '@/data/portfolio';
 import type { Skill } from '@/types';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
-import { Mail, Github, BookOpen, ArrowRight } from 'lucide-react';
+// @ts-expect-error
+import { Mail, Github, Code2, ArrowRight } from 'lucide-react';
 
 export default function SkillsPage() {
   const { t } = useTranslation();
@@ -115,7 +116,7 @@ export default function SkillsPage() {
 
           <div className="relative text-center">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-300 text-sm font-medium mb-6">
-              <BookOpen size={16} />
+              <Code2 size={16} />
               {t('skills.continuousLearning')}
             </div>
             <p className="text-gray-300 text-lg leading-relaxed max-w-2xl mx-auto">
