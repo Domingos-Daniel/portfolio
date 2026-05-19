@@ -1,6 +1,5 @@
 'use client';
 
-// @ts-expect-error
 import { Github, Mail, MapPin, Phone, Linkedin } from 'lucide-react';
 import { contact } from '@/data/portfolio';
 import { useTranslation } from 'react-i18next';

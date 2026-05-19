@@ -5,8 +5,10 @@ import { personalInfo, contact } from '@/data/portfolio';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import TypingEffect from '@/components/TypingEffect';
-// @ts-expect-error
-import { MapPin, Mail, Github, Linkedin, Code2, ArrowRight, Calendar, Building2, Download, GraduationCap } from 'lucide-react';
+import {
+  MapPin, Mail, Github, Linkedin, Briefcase, GraduationCap,
+  Wrench, ArrowRight, Calendar, Building2, Download
+} from 'lucide-react';
 
 export default function AboutPage() {
   const { t } = useTranslation();
@@ -127,7 +129,7 @@ export default function AboutPage() {
           >
             <div className="flex items-center gap-3 mb-6">
               <div className="p-2 bg-blue-500/10 border border-blue-500/20 rounded-lg">
-                <Building2 size={18} className="text-blue-400" />
+                <Briefcase size={18} className="text-blue-400" />
               </div>
               <h3 className="text-xl font-semibold text-white">{t('about.experienceTitle')}</h3>
             </div>
@@ -182,7 +184,7 @@ export default function AboutPage() {
                     </span>
                   </div>
                   <div className="flex items-center gap-1.5 text-blue-400 text-sm mb-3">
-                    <Code2 size={14} />
+                    <GraduationCap size={14} />
                     {t(`about.education.${key}.school`)}
                   </div>
                   <p className="text-gray-400 text-sm leading-relaxed">
@@ -202,7 +204,7 @@ export default function AboutPage() {
           >
             <div className="flex items-center gap-3 mb-6">
               <div className="p-2 bg-blue-500/10 border border-blue-500/20 rounded-lg">
-                <Code2 size={18} className="text-blue-400" />
+                <Wrench size={18} className="text-blue-400" />
               </div>
               <h3 className="text-xl font-semibold text-white">{t('about.servicesTitle')}</h3>
             </div>

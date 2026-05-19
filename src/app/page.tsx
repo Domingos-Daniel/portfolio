@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import Link from "next/link";
-// @ts-expect-error
 import { Github, Mail, MapPin, ArrowRight, Linkedin, Code2, Palette } from 'lucide-react';
 import { personalInfo, contact, projects } from '@/data/portfolio';
 import { useTranslation } from 'react-i18next';
@@ -19,8 +18,7 @@ export default function Home() {
     return featuredIds.map(id => projects.find(p => p.id === id)!).filter(Boolean);
   }, []);
 
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const containerVariants: any = {
+  const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
@@ -28,13 +26,12 @@ export default function Home() {
     }
   };
 
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const itemVariants: any = {
+  const itemVariants = {
     hidden: { opacity: 0, y: 30 },
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.6, ease: 'easeOut' }
+      transition: { duration: 0.6, ease: [0.21, 0.47, 0.32, 0.98] }
     }
   };
 
