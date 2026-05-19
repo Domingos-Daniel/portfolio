@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+// @ts-expect-error lucide-react types not resolved with bundler moduleResolution
 import { Github, Mail, MapPin, ArrowRight, Linkedin, Code2, Palette } from 'lucide-react';
 import { personalInfo, contact, projects } from '@/data/portfolio';
 import { useTranslation } from 'react-i18next';
@@ -31,7 +32,7 @@ export default function Home() {
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.6, ease: [0.21, 0.47, 0.32, 0.98] }
+      transition: { duration: 0.6, ease: [0.21, 0.47, 0.32, 0.98] as const }
     }
   };
 

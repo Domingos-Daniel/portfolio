@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import { useState, useCallback, useEffect } from 'react';
+// @ts-expect-error lucide-react types not resolved with bundler moduleResolution
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 

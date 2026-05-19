@@ -5,6 +5,7 @@ import { skills } from '@/data/portfolio';
 import type { Skill } from '@/types';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
+// @ts-expect-error lucide-react types not resolved with bundler moduleResolution
 import { Mail, Github, BookOpen, ArrowRight } from 'lucide-react';
 
 export default function SkillsPage() {
